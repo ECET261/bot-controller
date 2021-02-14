@@ -39,11 +39,12 @@ class _SettingsState extends State<Settings> {
         ),
       ),
       body: Column(children: [
-        Text(
-          'IP Address of Bot',
-          style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
-        ),
         TextField(
+          decoration: InputDecoration(
+            icon: Icon(Icons.send),
+            border: const OutlineInputBorder(),
+            hintText: 'Enter new Bot IP',
+          ),
           textAlign: TextAlign.center,
           onChanged: (String data) {
             newAddress(data);
