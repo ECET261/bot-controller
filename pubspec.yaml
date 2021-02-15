@@ -55,7 +55,7 @@ flutter:
   #   - images/a_dot_ham.jpeg
 
 flutter_icons:
-    imsge_path: "icons/icon.png"
+    image_path: "icons/icon.png"
     android: true
 
   # An image asset can refer to one or more resolution-specific "variants", see
