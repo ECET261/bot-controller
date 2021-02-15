@@ -31,6 +31,7 @@ class _SettingsState extends State<Settings> {
     return Scaffold(
       backgroundColor: Colors.grey[500],
       appBar: AppBar(
+        backgroundColor: Colors.red[600],
         title: Text('Settings'),
         centerTitle: true,
         //overide default back arrow to return data
@@ -51,7 +52,7 @@ class _SettingsState extends State<Settings> {
           },
         ),
         SizedBox(
-          height: 8.0,
+          height: 2.0,
         ),
         Text(
           'Current Bot IP: $ipaddress',

@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Bot Controller',
+      title: 'piBot',
       initialRoute: '/home',
       routes: {
         '/': (context) => Loading(),

@@ -102,11 +102,12 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         //leading: Container(), //removes back button
         //overide default back arrow to exit program
+        backgroundColor: Colors.red[600],
         leading: BackButton(
           onPressed: () => SystemNavigator.pop(),
         ),
 
-        title: Text('Bot Controller'),
+        title: Text('piBot'),
         centerTitle: true,
         actions: [
           PopupMenuButton(
@@ -138,6 +139,7 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             FloatingActionButton(
+              backgroundColor: Colors.red[600],
               heroTag: 'X',
               child: Text(
                 'X',
@@ -157,6 +159,7 @@ class _HomePageState extends State<HomePage> {
               height: 20.0,
             ),
             FloatingActionButton(
+              backgroundColor: Colors.red[600],
               heroTag: 'Y',
               child: Text(
                 'Y',

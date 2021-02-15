@@ -6,6 +6,7 @@ class About extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[500],
       appBar: AppBar(
+        backgroundColor: Colors.red[600],
         title: Text('About'),
         centerTitle: true,
       ),
@@ -58,7 +59,7 @@ class About extends StatelessWidget {
                   radius: 60.0,
                 ),
                 Text(
-                  'Bot Controller',
+                  'piBot',
                   style: TextStyle(
                     fontSize: 28.0,
                     fontWeight: FontWeight.bold,
