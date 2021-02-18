@@ -9,6 +9,14 @@ class About extends StatelessWidget {
         backgroundColor: Colors.red[600],
         title: Text('About'),
         centerTitle: true,
+        leading: IconButton(
+          padding: EdgeInsets.symmetric(),
+          icon: Icon(
+            Icons.arrow_back,
+            size: 48.0,
+          ),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
       ),
       body: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,

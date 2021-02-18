@@ -35,7 +35,12 @@ class _SettingsState extends State<Settings> {
         title: Text('Settings'),
         centerTitle: true,
         //overide default back arrow to return data
-        leading: BackButton(
+        leading: IconButton(
+          padding: EdgeInsets.symmetric(),
+          icon: Icon(
+            Icons.arrow_back,
+            size: 48.0,
+          ),
           onPressed: () => Navigator.pop(context, ipaddress),
         ),
       ),

@@ -103,10 +103,14 @@ class _HomePageState extends State<HomePage> {
         //leading: Container(), //removes back button
         //overide default back arrow to exit program
         backgroundColor: Colors.red[600],
-        leading: BackButton(
+        leading: IconButton(
+          padding: EdgeInsets.symmetric(),
+          icon: Icon(
+            Icons.arrow_back,
+            size: 48.0,
+          ),
           onPressed: () => SystemNavigator.pop(),
         ),
-
         title: Text('piBot'),
         centerTitle: true,
         actions: [
