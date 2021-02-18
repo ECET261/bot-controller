@@ -29,7 +29,7 @@ class _SettingsState extends State<Settings> {
   Widget build(BuildContext context) {
     _getAddress();
     return Scaffold(
-      backgroundColor: Colors.grey[500],
+      backgroundColor: Colors.red[800],
       appBar: AppBar(
         backgroundColor: Colors.red[600],
         title: Text('Settings'),
@@ -57,14 +57,14 @@ class _SettingsState extends State<Settings> {
         Text(
           'Current Bot IP: $ipaddress',
           style: TextStyle(
-            fontSize: 24.0,
+            fontSize: 20.0,
             color: Colors.white,
           ),
         ),
         Text(
           'PORT: 5005',
           style: TextStyle(
-            fontSize: 24.0,
+            fontSize: 20.0,
             color: Colors.white,
           ),
         ),

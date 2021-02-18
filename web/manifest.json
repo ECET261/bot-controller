@@ -1,6 +1,6 @@
 {
-    "name": "jtest",
-    "short_name": "jtest",
+    "name": "pibot",
+    "short_name": "pibot",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

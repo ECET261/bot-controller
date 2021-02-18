@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'dart:io';
 import 'dart:convert';
 
-import 'package:jtest/pages/settings.dart';
+import 'settings.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[500],
+      backgroundColor: Colors.red[800],
       appBar: AppBar(
         //leading: Container(), //removes back button
         //overide default back arrow to exit program
@@ -132,6 +132,9 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+        SizedBox(
+          width: 8.0,
+        ),
         JoystickView(
           onDirectionChanged: joystickl,
         ),
@@ -139,13 +142,15 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             FloatingActionButton(
-              backgroundColor: Colors.red[600],
+              backgroundColor: Colors.blueGrey,
+              elevation: 20.0,
               heroTag: 'X',
               child: Text(
                 'X',
                 style: TextStyle(
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold,
+                  color: Colors.white54,
                 ),
               ),
               onPressed: () {
@@ -159,13 +164,15 @@ class _HomePageState extends State<HomePage> {
               height: 20.0,
             ),
             FloatingActionButton(
-              backgroundColor: Colors.red[600],
+              backgroundColor: Colors.blueGrey,
+              elevation: 20.0,
               heroTag: 'Y',
               child: Text(
                 'Y',
                 style: TextStyle(
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold,
+                  color: Colors.white54,
                 ),
               ),
               onPressed: () {
@@ -179,6 +186,9 @@ class _HomePageState extends State<HomePage> {
         ),
         JoystickView(
           onDirectionChanged: joystickr,
+        ),
+        SizedBox(
+          width: 8.0,
         ),
       ]),
     );

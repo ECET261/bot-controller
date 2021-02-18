@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:jtest/pages/about.dart';
-import 'package:jtest/pages/home.dart';
-import 'package:jtest/pages/loading.dart';
-import 'package:jtest/pages/settings.dart';
+
+import 'pages/about.dart';
+import 'pages/home.dart';
+import 'pages/settings.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
       title: 'piBot',
       initialRoute: '/home',
       routes: {
-        '/': (context) => Loading(),
         '/home': (context) => HomePage(),
         '/settings': (context) => Settings(),
         '/about': (context) => About(),

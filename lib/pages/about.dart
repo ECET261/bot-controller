@@ -4,7 +4,7 @@ class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[500],
+      backgroundColor: Colors.red[800],
       appBar: AppBar(
         backgroundColor: Colors.red[600],
         title: Text('About'),
@@ -32,23 +32,62 @@ class About extends StatelessWidget {
                   height: 8.0,
                 ),
                 Text(
-                    "{LDir: F, LAng: 0, LLen: 0, RDir: F, RAng: 0, RLen: 0, But: -}"),
+                  "{LDir: F, LAng: 0, LLen: 0, RDir: F, RAng: 0, RLen: 0, But: -}",
+                  style: TextStyle(
+                    color: Colors.white54,
+                  ),
+                ),
                 SizedBox(
                   height: 8.0,
                 ),
-                Text('LDir: F - Forward, B - Backward'),
-                Text('LAng: 0 - 359'),
-                Text('LLen: -100 - 100'),
+                Text(
+                  'LDir: F - Forward, B - Backward',
+                  style: TextStyle(
+                    color: Colors.white54,
+                  ),
+                ),
+                Text(
+                  'LAng: 0 - 359',
+                  style: TextStyle(
+                    color: Colors.white54,
+                  ),
+                ),
+                Text(
+                  'LLen: -100 - 100',
+                  style: TextStyle(
+                    color: Colors.white54,
+                  ),
+                ),
                 SizedBox(
                   height: 8.0,
                 ),
-                Text('RDir: F - Forward, B - Backward'),
-                Text('RAng: 0 - 359'),
-                Text('RLen: -100 - 100'),
+                Text(
+                  'RDir: F - Forward, B - Backward',
+                  style: TextStyle(
+                    color: Colors.white54,
+                  ),
+                ),
+                Text(
+                  'RAng: 0 - 359',
+                  style: TextStyle(
+                    color: Colors.white54,
+                  ),
+                ),
+                Text(
+                  'RLen: -100 - 100',
+                  style: TextStyle(
+                    color: Colors.white54,
+                  ),
+                ),
                 SizedBox(
                   height: 8.0,
                 ),
-                Text('But: X or Y')
+                Text(
+                  'But: X or Y',
+                  style: TextStyle(
+                    color: Colors.white54,
+                  ),
+                )
               ]),
           Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -66,8 +105,18 @@ class About extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-                Text('Mel Dundas'),
-                Text('Feb 10, 2021'),
+                Text(
+                  'Mel Dundas',
+                  style: TextStyle(
+                    color: Colors.white54,
+                  ),
+                ),
+                Text(
+                  'Feb 10, 2021',
+                  style: TextStyle(
+                    color: Colors.white54,
+                  ),
+                ),
               ]),
           SizedBox(
             width: 20.0,
