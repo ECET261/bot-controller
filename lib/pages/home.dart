@@ -98,11 +98,11 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red[800],
+      backgroundColor: Colors.grey[900],
       appBar: AppBar(
         //leading: Container(), //removes back button
         //overide default back arrow to exit program
-        backgroundColor: Colors.red[600],
+        backgroundColor: Colors.grey[800],
         leading: IconButton(
           padding: EdgeInsets.symmetric(),
           icon: Icon(

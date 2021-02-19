@@ -29,9 +29,9 @@ class _SettingsState extends State<Settings> {
   Widget build(BuildContext context) {
     _getAddress();
     return Scaffold(
-      backgroundColor: Colors.red[800],
+      backgroundColor: Colors.grey[900],
       appBar: AppBar(
-        backgroundColor: Colors.red[600],
+        backgroundColor: Colors.grey[800],
         title: Text('Settings'),
         centerTitle: true,
         //overide default back arrow to return data
@@ -47,7 +47,12 @@ class _SettingsState extends State<Settings> {
       body: Column(children: [
         TextField(
           decoration: InputDecoration(
-            icon: Icon(Icons.send),
+            fillColor: Colors.grey[500],
+            filled: true,
+            icon: Icon(
+              Icons.send,
+              color: Colors.white,
+            ),
             border: const OutlineInputBorder(),
             hintText: 'Enter new Bot IP',
           ),
