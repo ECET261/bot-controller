@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'pages/about.dart';
-import 'pages/home.dart';
-import 'pages/settings.dart';
+import 'package:pibot/pages/about.dart';
+import 'package:pibot/pages/home.dart';
+import 'package:pibot/pages/settings.dart';
 
 void main() {
   runApp(MyApp());

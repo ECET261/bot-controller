@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'dart:io';
 import 'dart:convert';
 
-import 'settings.dart';
+import 'package:pibot/pages/settings.dart';
 
 class HomePage extends StatefulWidget {
   @override

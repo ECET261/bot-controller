@@ -91,7 +91,7 @@ class About extends StatelessWidget {
                   height: 8.0,
                 ),
                 Text(
-                  'But: X or Y',
+                  'But: X, Y, or -',
                   style: TextStyle(
                     color: Colors.white54,
                   ),

@@ -44,41 +44,46 @@ class _SettingsState extends State<Settings> {
           onPressed: () => Navigator.pop(context, ipaddress),
         ),
       ),
-      body: Column(children: [
-        TextField(
-          decoration: InputDecoration(
-            fillColor: Colors.grey[500],
-            filled: true,
-            icon: Icon(
-              Icons.send,
-              color: Colors.white,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Column(children: [
+            TextField(
+              decoration: InputDecoration(
+                fillColor: Colors.grey[500],
+                filled: true,
+                icon: Icon(
+                  Icons.send,
+                  color: Colors.white,
+                ),
+                border: const OutlineInputBorder(),
+                hintText: 'Enter new Bot IP',
+              ),
+              textAlign: TextAlign.center,
+              onChanged: (String data) {
+                newAddress(data);
+              },
             ),
-            border: const OutlineInputBorder(),
-            hintText: 'Enter new Bot IP',
-          ),
-          textAlign: TextAlign.center,
-          onChanged: (String data) {
-            newAddress(data);
-          },
+            SizedBox(
+              height: 2.0,
+            ),
+            Text(
+              'Current Bot IP: $ipaddress',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.white,
+              ),
+            ),
+            Text(
+              'PORT: 5005',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.white,
+              ),
+            ),
+          ]),
         ),
-        SizedBox(
-          height: 2.0,
-        ),
-        Text(
-          'Current Bot IP: $ipaddress',
-          style: TextStyle(
-            fontSize: 20.0,
-            color: Colors.white,
-          ),
-        ),
-        Text(
-          'PORT: 5005',
-          style: TextStyle(
-            fontSize: 20.0,
-            color: Colors.white,
-          ),
-        ),
-      ]),
+      ),
     );
   }
 }
